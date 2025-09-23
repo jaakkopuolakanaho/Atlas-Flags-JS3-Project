@@ -85,8 +85,7 @@ const Quiz = () => {
           total={questions.length}
           answer={answer} setAnswer={setAnswer}
           feedback={feedback}
-          onAnswer={handleAnswer} // single handler now
-          onNext={() => {}}        // not needed anymore
+          onAnswer={handleAnswer}
           onQuit={() => navigate('/')}
         />
 
