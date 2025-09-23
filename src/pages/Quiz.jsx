@@ -66,7 +66,11 @@ const Quiz = () => {
         <QuizSetup
           username={username} setUsername={setUsername}
           region={region} setRegion={setRegion}
-          onStart={() => setPhase('quiz')}
+              onStart={() => {
+          if (!username || !region) return;    
+      setPhase('quiz');
+    }}
+
           onQuit={() => navigate('/')}
         />
       )}

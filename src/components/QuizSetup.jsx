@@ -26,6 +26,12 @@ const QuizSetup = ({ username, setUsername, region, setRegion, onStart, onQuit }
       </select>
     </div>
 
+    {(!username || !region) && (
+      <p style={{ color: 'red', marginBottom: '10px' }}>
+        Please enter a username and select a region to start.
+      </p>
+    )}
+
     <Button text="Start Quiz" onClick={onStart} disabled={!username || !region} />
     <Button text="Quit Quiz" onClick={onQuit} />
   </>
