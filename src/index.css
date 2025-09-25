@@ -59,7 +59,7 @@ body {
 }
 
 .menu-container h1 {
-  font-family: 'Courier New', monospace; /* rougher, rebellious vibe */
+  font-family: 'Courier New', monospace;
   font-weight: bold;
   font-size: 1.5rem;
   color: var(--primary);

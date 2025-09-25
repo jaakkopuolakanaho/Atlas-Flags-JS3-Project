@@ -15,14 +15,14 @@ const fetchCountries = createAsyncThunk(
 
 const initialState = {
   allCountries: [],
-  status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
+  status: 'idle',
   error: null,
 };
 
 const countriesSlice = createSlice({
   name: 'countries',
   initialState,
-  reducers: {}, // no local saving here
+  reducers: {},
   extraReducers: builder => {
     builder
       .addCase(fetchCountries.pending, state => {
