@@ -61,27 +61,33 @@ The application uses **Redux Toolkit** for global state handling:
 
 
 src/
-├─ components/
-│ ├─ Button.jsx
-│ ├─ CountryCardDetails.jsx
-│ ├─ FlagsGrid.jsx
-│ ├─ Leaderboard.jsx
-│ ├─ QuizQuestion.jsx
-│ ├─ QuizResult.jsx
-│ ├─ QuizSetup.jsx
-├─ features/
-│ ├─ countries/
-│ │ ├─ countriesSlice.js
-├─ pages/
-│ ├─ CountriesCollection.jsx
-│ ├─ CountryDetail.jsx
-│ ├─ LearnCountries.jsx
-│ ├─ Menu.jsx
-│ ├─ Quiz.jsx
-│ ├─ QuizLeaderboard.jsx
-├─ store.js
-├─ App.jsx
-├─ main.jsx
+├─ App.jsx                  # App root
+├─ main.jsx                # Entry point
+├─ store.js                # Redux store setup
+├─ index.css               # Global styles
+
+├─ assets/                 # Static assets
+
+├─ components/             # Reusable UI components
+│  ├─ Button.jsx
+│  ├─ CountryCardDetails.jsx
+│  ├─ FlagsGrid.jsx
+│  ├─ Leaderboard.jsx
+│  ├─ QuizQuestion.jsx
+│  ├─ QuizResult.jsx
+│  ├─ QuizSetup.jsx
+
+├─ features/               # Redux slices / state logic
+│  ├─ countries/
+│  │  ├─ countriesSlice.js
+
+├─ pages/                  # Route-based pages
+│  ├─ CountriesCollection.jsx
+│  ├─ CountryDetail.jsx
+│  ├─ LearnCountries.jsx
+│  ├─ Menu.jsx
+│  ├─ Quiz.jsx
+│  ├─ QuizLeaderboard.jsx
 
 
 ---
